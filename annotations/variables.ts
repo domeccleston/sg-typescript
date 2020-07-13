@@ -40,3 +40,5 @@ When to use type annotation:
 2) when declaring and initializing on separate lines
 3) 
 */
+
+export {}

@@ -17,4 +17,10 @@ type Drink = [string, boolean, number];
 const pepsiTuple: [string, boolean, number] = ['brown', true, 40] // this enforces type order
 const sprite: Drink = ['clear', true, 30]
 
-// tuples aren't used that often, 
+// tuples aren't used that often though, because objects provide more information for records most of the time
+
+const carStats = {
+    horsepower: 400,
+    weight: 3354,
+}
+

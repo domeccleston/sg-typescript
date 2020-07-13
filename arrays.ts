@@ -5,7 +5,7 @@ let carsByMake: string[][]
 carsByMake = [
     ['camaro'],
     ['f150'],
-    'corolla' // <- error
+    // 'corolla' // <- error
 ]
 
 const thisCar = carMakers[0] // type inference
