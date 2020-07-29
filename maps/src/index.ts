@@ -1,11 +1,12 @@
 import { User } from './User';
-import { Company } from './Company';
-import {} from '@types/googlemaps';
+import { Company } from './Company';    
+import {} from '@types/googlemaps'
+import { CustomMap } from './CustomMap';
 
 const user = new User();
 const company = new Company();
+const customMap = new CustomMap('map');
 
-console.log(user);
-console.log(company);
+customMap.addMarker(user);
+customMap.addMarker(company);
 
-google
