@@ -1,15 +1,17 @@
-class Sorter {
-    constructor(public collection: number[]) {}
+import { Sorter } from './Sorter';
+import { NumbersCollection } from './NumbersCollection';
+import { CharactersCollection } from './CharactersCollection';
+import { LinkedList } from './LinkedList';
 
-    sort(): void {
-        const { length } = this.collection;
+const charactersCollection = new CharactersCollection('hello');
+charactersCollection.sort();
+console.log(charactersCollection.data);
 
-        for (let i = 0; i < length; i++) {
-            for (let j = 0; j < length - i - 1; j++) {
-                
-            }
-        }
-    }
-}
+const linkedlist = new LinkedList();
+linkedlist.add(500)
+linkedlist.add(10)
+linkedlist.add(-3)
+linkedlist.add(3)
 
-const sorter = new Sorter([10, 3, -5, 0])
+linkedlist.sort();
+linkedlist.print();
