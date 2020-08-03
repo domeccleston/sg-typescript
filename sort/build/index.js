@@ -1,15 +1,14 @@
 "use strict";
-var Sorter = /** @class */ (function () {
-    function Sorter(collection) {
-        this.collection = collection;
-    }
-    Sorter.prototype.sort = function () {
-        var length = this.collection.length;
-        for (var i = 0; i < length; i++) {
-            for (var j = 0; j < length - i - 1; j++) {
-            }
-        }
-    };
-    return Sorter;
-}());
-var sorter = new Sorter([10, 3, -5, 0]);
+Object.defineProperty(exports, "__esModule", { value: true });
+var CharactersCollection_1 = require("./CharactersCollection");
+var LinkedList_1 = require("./LinkedList");
+var charactersCollection = new CharactersCollection_1.CharactersCollection('hello');
+charactersCollection.sort();
+console.log(charactersCollection.data);
+var linkedlist = new LinkedList_1.LinkedList();
+linkedlist.add(500);
+linkedlist.add(10);
+linkedlist.add(-3);
+linkedlist.add(3);
+linkedlist.sort();
+linkedlist.print();
